@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-TelegramDlBot.Worker-5a394bcc-6a9f-4a2c-ae98-20e2d5f49d11</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1-Preview.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TelegramDlBot.Core\TelegramDlBot.Core.csproj" />
+  </ItemGroup>
+</Project>
